@@ -240,14 +240,14 @@ private:
 
   virtual void dispatchDriverPowerControl(UInt32 whatToDo);
 
-  virtual void free(void);
+  virtual void free(void) override;
 
 public:
-  virtual bool init(OSDictionary * properties);
-  virtual bool start(IOService * provider);
-  virtual void stop(IOService * provider);
+  virtual bool init(OSDictionary * properties) override;
+  virtual bool start(IOService * provider) override;
+  virtual void stop(IOService * provider) override;
 
-  virtual IOWorkLoop * getWorkLoop() const;
+  virtual IOWorkLoop * getWorkLoop() const override;
 
   virtual void installInterruptAction(PS2DeviceType      deviceType,
                                       OSObject *         target,
@@ -260,7 +260,7 @@ public:
   virtual void         submitRequestAndBlock(PS2Request * request);
 
   virtual IOReturn setPowerState(unsigned long powerStateOrdinal,
-                                 IOService *   policyMaker);
+                                 IOService *   policyMaker) override;
 
   virtual void installPowerControlAction(PS2DeviceType         deviceType,
                                          OSObject *            target, 
