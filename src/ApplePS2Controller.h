@@ -101,7 +101,7 @@ class ApplePS2MouseDevice;
 
 // Enable debugger support (eg. mini-monitor).
 
-#define DEBUGGER_SUPPORT 1
+#define DEBUGGER_SUPPORT 0
 
 // Enable dynamic "second chance" re-ordering of input stream data if a
 // command response fails to match the expected byte.
