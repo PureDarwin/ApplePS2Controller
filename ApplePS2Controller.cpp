@@ -22,7 +22,7 @@
 
 #include <IOKit/assert.h>
 #include <IOKit/IOService.h>
-#include <IOKit/IOSyncer.h>
+#include "IOSyncer.h"
 #include <pexpert/pexpert.h>
 #include "ApplePS2KeyboardDevice.h"
 #include "ApplePS2MouseDevice.h"

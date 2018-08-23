@@ -44,8 +44,15 @@
 		1F3A6647212F7A9300C17787 = {
 			isa = PBXGroup;
 			children = (
-				1F58BF15212F7B7E000BE649 /* headers */,
-				1F58BF14212F7B7E000BE649 /* src */,
+				1F58BF17212F7BFF000BE649 /* IOSyncer.h */,
+				1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */,
+				1F58BF02212F7AD8000BE649 /* ApplePS2Controller.cpp */,
+				1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */,
+				1F58BF03212F7AD8000BE649 /* ApplePS2KeyboardDevice.h */,
+				1F58BF00212F7AD8000BE649 /* ApplePS2KeyboardDevice.cpp */,
+				1F58BF01212F7AD8000BE649 /* ApplePS2MouseDevice.h */,
+				1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */,
+				1F58BF12212F7B2A000BE649 /* Info.plist */,
 				1F3A6652212F7A9300C17787 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,37 +63,6 @@
 				1F3A6651212F7A9300C17787 /* ApplePS2Controller.kext */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1F58BF14212F7B7E000BE649 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */,
-				1F58BF02212F7AD8000BE649 /* ApplePS2Controller.cpp */,
-				1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */,
-				1F58BF03212F7AD8000BE649 /* ApplePS2KeyboardDevice.h */,
-				1F58BF00212F7AD8000BE649 /* ApplePS2KeyboardDevice.cpp */,
-				1F58BF01212F7AD8000BE649 /* ApplePS2MouseDevice.h */,
-				1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */,
-				1F58BF12212F7B2A000BE649 /* Info.plist */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		1F58BF15212F7B7E000BE649 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				1F58BF16212F7BAA000BE649 /* IOKit */,
-			);
-			path = headers;
-			sourceTree = "<group>";
-		};
-		1F58BF16212F7BAA000BE649 /* IOKit */ = {
-			isa = PBXGroup;
-			children = (
-				1F58BF17212F7BFF000BE649 /* IOSyncer.h */,
-			);
-			path = IOKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +212,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers";
 			};
 			name = Debug;
 		};
@@ -289,7 +264,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers";
 			};
 			name = Release;
 		};
@@ -300,7 +274,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
-				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = /System/Library/Extensions;
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
@@ -317,7 +291,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
-				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = /System/Library/Extensions;
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
