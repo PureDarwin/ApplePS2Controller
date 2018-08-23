@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>1.1.0, Copyright © 2018 PureDarwin.</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.driver.ApplePS2Controller</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
