@@ -14,7 +14,6 @@
 		1F58BF0E212F7AD9000BE649 /* ApplePS2MouseDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */; };
 		1F58BF0F212F7AD9000BE649 /* ApplePS2Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */; };
 		1F58BF10212F7AD9000BE649 /* ApplePS2Device.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */; };
-		1F58BF11212F7AD9000BE649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F58BF08212F7AD9000BE649 /* InfoPlist.strings */; };
 		1F58BF18212F7BFF000BE649 /* IOSyncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF17212F7BFF000BE649 /* IOSyncer.h */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2MouseDevice.cpp; sourceTree = "<group>"; };
 		1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2Controller.h; sourceTree = "<group>"; };
 		1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2Device.h; sourceTree = "<group>"; };
-		1F58BF09212F7AD9000BE649 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
 		1F58BF12212F7B2A000BE649 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F58BF17212F7BFF000BE649 /* IOSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSyncer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +46,6 @@
 			children = (
 				1F58BF15212F7B7E000BE649 /* headers */,
 				1F58BF14212F7B7E000BE649 /* src */,
-				1F58BF07212F7AD9000BE649 /* English.lproj */,
 				1F3A6652212F7A9300C17787 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,14 +56,6 @@
 				1F3A6651212F7A9300C17787 /* ApplePS2Controller.kext */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1F58BF07212F7AD9000BE649 /* English.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				1F58BF08212F7AD9000BE649 /* InfoPlist.strings */,
-			);
-			path = English.lproj;
 			sourceTree = "<group>";
 		};
 		1F58BF14212F7B7E000BE649 /* src */ = {
@@ -173,7 +162,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F58BF11212F7AD9000BE649 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,17 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1F58BF08212F7AD9000BE649 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F58BF09212F7AD9000BE649 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1F3A6659212F7A9300C17787 /* Debug */ = {
