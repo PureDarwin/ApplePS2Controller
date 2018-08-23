@@ -187,11 +187,13 @@ bool ApplePS2Controller::init(OSDictionary * properties)
 
 void ApplePS2Controller::free(void)
 {
+#if !defined(__PUREDARWIN__)
     if (_controllerLock)
     {
         IOSimpleLockFree(_controllerLock);
         _controllerLock = 0;
     }
+#endif
     super::free();
 }
 
