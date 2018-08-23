@@ -1450,7 +1450,7 @@ void ApplePS2Controller::setPowerStateGated( UInt32 powerState )
         break;
 
       default:
-        IOLog("%s: bad power state %ld\n", getName(), powerState);
+        IOLog("%s: bad power state %u\n", getName(), (unsigned int)powerState);
         break;
     }
 
