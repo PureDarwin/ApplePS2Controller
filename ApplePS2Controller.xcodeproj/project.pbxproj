@@ -44,14 +44,8 @@
 		1F3A6647212F7A9300C17787 = {
 			isa = PBXGroup;
 			children = (
-				1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */,
-				1F58BF02212F7AD8000BE649 /* ApplePS2Controller.cpp */,
-				1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */,
-				1F58BF03212F7AD8000BE649 /* ApplePS2KeyboardDevice.h */,
-				1F58BF00212F7AD8000BE649 /* ApplePS2KeyboardDevice.cpp */,
-				1F58BF01212F7AD8000BE649 /* ApplePS2MouseDevice.h */,
-				1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */,
-				1F58BF12212F7B2A000BE649 /* Info.plist */,
+				1F58BF15212F7B7E000BE649 /* headers */,
+				1F58BF14212F7B7E000BE649 /* src */,
 				1F58BF07212F7AD9000BE649 /* English.lproj */,
 				1F3A6652212F7A9300C17787 /* Products */,
 			);
@@ -71,6 +65,28 @@
 				1F58BF08212F7AD9000BE649 /* InfoPlist.strings */,
 			);
 			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		1F58BF14212F7B7E000BE649 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */,
+				1F58BF02212F7AD8000BE649 /* ApplePS2Controller.cpp */,
+				1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */,
+				1F58BF03212F7AD8000BE649 /* ApplePS2KeyboardDevice.h */,
+				1F58BF00212F7AD8000BE649 /* ApplePS2KeyboardDevice.cpp */,
+				1F58BF01212F7AD8000BE649 /* ApplePS2MouseDevice.h */,
+				1F58BF04212F7AD8000BE649 /* ApplePS2MouseDevice.cpp */,
+				1F58BF12212F7B2A000BE649 /* Info.plist */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1F58BF15212F7B7E000BE649 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +308,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.puredarwin.ApplePS2Controller;
@@ -308,7 +324,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.puredarwin.ApplePS2Controller;
