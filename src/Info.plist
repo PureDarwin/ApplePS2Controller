@@ -42,11 +42,11 @@
 	<string>1.1.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.kernel.iokit</key>
+		<key>com.apple.kpi.iokit</key>
 		<string>1.1</string>
-		<key>com.apple.kernel.libkern</key>
+		<key>com.apple.kpi.libkern</key>
 		<string>1.1</string>
-		<key>com.apple.kernel.mach</key>
+		<key>com.apple.kpi.mach</key>
 		<string>1.1</string>
 	</dict>
 	<key>OSBundleRequired</key>
