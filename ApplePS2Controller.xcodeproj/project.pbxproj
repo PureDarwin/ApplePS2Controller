@@ -301,6 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
 				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				INSTALL_PATH = /System/Library/Extensions;
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.puredarwin.ApplePS2Controller;
@@ -317,6 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEVELOPMENT_TEAM = 3P242C9ES5;
 				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				INSTALL_PATH = /System/Library/Extensions;
 				MODULE_NAME = org.puredarwin.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.puredarwin.ApplePS2Controller;
