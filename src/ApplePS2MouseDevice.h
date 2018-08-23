@@ -39,8 +39,8 @@ protected:
   ExpansionData * _expansionData;
 
 public:
-  virtual bool attach(IOService * provider);
-  virtual void detach(IOService * provider);
+  virtual bool attach(IOService * provider) override;
+  virtual void detach(IOService * provider) override;
 
   // Interrupt Handling Routines
 
