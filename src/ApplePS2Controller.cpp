@@ -211,6 +211,18 @@ void ApplePS2Controller::free(void)
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+void ApplePS2Controller::s_interruptOccurred(OSObject *object, IOInterruptEventSource *source, int value) {
+	ApplePS2Controller *receiver = OSDynamicCast(ApplePS2Controller, object);
+	assert(receiver != NULL);
+	receiver->interruptOccurred(source, value);
+}
+
+void ApplePS2Controller::s_processRequestQueue(OSObject *object, IOInterruptEventSource *source, int value) {
+	ApplePS2Controller *receiver = OSDynamicCast(ApplePS2Controller, object);
+	assert(receiver != NULL);
+	receiver->processRequestQueue(source, value);
+}
+
 bool ApplePS2Controller::start(IOService * provider)
 {
   //
@@ -282,11 +294,11 @@ bool ApplePS2Controller::start(IOService * provider)
 
   _workLoop                = IOWorkLoop::workLoop();
   _interruptSourceMouse    = IOInterruptEventSource::interruptEventSource(
-        this, (IOInterruptEventAction) &ApplePS2Controller::interruptOccurred);
+        this, (IOInterruptEventAction) &ApplePS2Controller::s_interruptOccurred);
   _interruptSourceKeyboard = IOInterruptEventSource::interruptEventSource(
-        this, (IOInterruptEventAction) &ApplePS2Controller::interruptOccurred);
+        this, (IOInterruptEventAction) &ApplePS2Controller::s_interruptOccurred);
   _interruptSourceQueue    = IOInterruptEventSource::interruptEventSource(
-        this, (IOInterruptEventAction) &ApplePS2Controller::processRequestQueue);
+        this, (IOInterruptEventAction) &ApplePS2Controller::s_processRequestQueue);
 
   if ( !_workLoop                ||
        !_interruptSourceMouse    ||

@@ -212,6 +212,9 @@ private:
   UInt32                   _currentPowerState;
   bool                     _hardwareOffline;
 
+  static void   s_interruptOccurred(OSObject *, IOInterruptEventSource *, int);
+  static void   s_processRequestQueue(OSObject *, IOInterruptEventSource *, int);
+
   virtual void  dispatchDriverInterrupt(PS2DeviceType deviceType, UInt8 data);
   virtual void  interruptOccurred(IOInterruptEventSource *, int);
   virtual void  processRequest(PS2Request * request);
