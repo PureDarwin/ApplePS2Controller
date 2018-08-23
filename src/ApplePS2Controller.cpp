@@ -23,6 +23,7 @@
 #include <IOKit/assert.h>
 #include <IOKit/IOService.h>
 #include <IOKit/IOSyncer.h>
+#include <pexpert/pexpert.h>
 #include "ApplePS2KeyboardDevice.h"
 #include "ApplePS2MouseDevice.h"
 #include "ApplePS2Controller.h"
@@ -220,7 +221,7 @@ bool ApplePS2Controller::start(IOService * provider)
 #if DEBUGGER_SUPPORT
   // Enable special key sequence to enter debugger if debug boot-arg was set.
   int debugFlag = 0;
-  PE_parse_boot_arg("debug", &debugFlag);
+  PE_parse_boot_argn("debug", &debugFlag, sizeof(debugFlag));
   if (debugFlag) _debuggingEnabled = true;
 
   _keyboardQueueAlloc = (KeyboardQueueElement *)
