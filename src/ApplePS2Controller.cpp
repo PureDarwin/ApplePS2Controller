@@ -23,8 +23,8 @@
 #include <IOKit/assert.h>
 #include <IOKit/IOService.h>
 #include <IOKit/IOSyncer.h>
-#include <IOKit/ps2/ApplePS2KeyboardDevice.h>
-#include <IOKit/ps2/ApplePS2MouseDevice.h>
+#include "ApplePS2KeyboardDevice.h"
+#include "ApplePS2MouseDevice.h"
 #include "ApplePS2Controller.h"
 
 extern "C"

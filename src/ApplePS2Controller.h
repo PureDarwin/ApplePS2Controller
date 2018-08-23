@@ -26,7 +26,7 @@
 #include <IOKit/IOInterruptEventSource.h>
 #include <IOKit/IOService.h>
 #include <IOKit/IOWorkLoop.h>
-#include <IOKit/ps2/ApplePS2Device.h>
+#include "ApplePS2Device.h"
 
 class ApplePS2KeyboardDevice;
 class ApplePS2MouseDevice;

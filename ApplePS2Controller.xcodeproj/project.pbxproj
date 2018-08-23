@@ -15,6 +15,7 @@
 		1F58BF0F212F7AD9000BE649 /* ApplePS2Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF05212F7AD8000BE649 /* ApplePS2Controller.h */; };
 		1F58BF10212F7AD9000BE649 /* ApplePS2Device.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */; };
 		1F58BF11212F7AD9000BE649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F58BF08212F7AD9000BE649 /* InfoPlist.strings */; };
+		1F58BF18212F7BFF000BE649 /* IOSyncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58BF17212F7BFF000BE649 /* IOSyncer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F58BF06212F7AD8000BE649 /* ApplePS2Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2Device.h; sourceTree = "<group>"; };
 		1F58BF09212F7AD9000BE649 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
 		1F58BF12212F7B2A000BE649 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F58BF17212F7BFF000BE649 /* IOSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSyncer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,17 @@
 		1F58BF15212F7B7E000BE649 /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				1F58BF16212F7BAA000BE649 /* IOKit */,
 			);
 			path = headers;
+			sourceTree = "<group>";
+		};
+		1F58BF16212F7BAA000BE649 /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				1F58BF17212F7BFF000BE649 /* IOSyncer.h */,
+			);
+			path = IOKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +109,7 @@
 			files = (
 				1F58BF0D212F7AD9000BE649 /* ApplePS2KeyboardDevice.h in Headers */,
 				1F58BF10212F7AD9000BE649 /* ApplePS2Device.h in Headers */,
+				1F58BF18212F7BFF000BE649 /* IOSyncer.h in Headers */,
 				1F58BF0F212F7AD9000BE649 /* ApplePS2Controller.h in Headers */,
 				1F58BF0B212F7AD9000BE649 /* ApplePS2MouseDevice.h in Headers */,
 			);
@@ -247,6 +259,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers";
 			};
 			name = Debug;
 		};
@@ -298,6 +311,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers";
 			};
 			name = Release;
 		};

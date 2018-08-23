@@ -21,7 +21,7 @@
  */
 
 #include <IOKit/assert.h>
-#include <IOKit/ps2/ApplePS2KeyboardDevice.h>
+#include "ApplePS2KeyboardDevice.h"
 #include "ApplePS2Controller.h"
 
 // =============================================================================

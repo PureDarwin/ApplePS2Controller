@@ -23,7 +23,7 @@
 #ifndef _APPLEPS2MOUSEDEVICE_H
 #define _APPLEPS2MOUSEDEVICE_H
 
-#include <IOKit/ps2/ApplePS2Device.h>
+#include "ApplePS2Device.h"
 
 class ApplePS2Controller;
 
