@@ -30,22 +30,8 @@
 
 extern "C"
 {
-    //#include <pexpert/i386/protos.h>
+    #include <pexpert/i386/protos.h>
     #include <machine/machine_routines.h>
-}
-
-#warning FIXME: use inb and outb from the kernel framework (2688371)
-typedef unsigned short i386_ioport_t;
-inline unsigned char inb(i386_ioport_t port)
-{
-    unsigned char datum;
-    asm volatile("inb %1, %0" : "=a" (datum) : "d" (port));
-    return(datum);
-}
-
-inline void outb(i386_ioport_t port, unsigned char datum)
-{
-    asm volatile("outb %0, %1" : : "a" (datum), "d" (port));
 }
 
 enum {
