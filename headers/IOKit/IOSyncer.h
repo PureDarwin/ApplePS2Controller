@@ -41,23 +41,18 @@ private:
     IOSimpleLock *guardLock;
     volatile bool threadMustStop;
     IOReturn fResult;
-    virtual void free() APPLE_KEXT_OVERRIDE;
+    virtual void free();
     virtual void privateSignal();
 
 public:
 
-    static IOSyncer * create(bool twoRetains = true)
-	APPLE_KEXT_DEPRECATED;
+    static IOSyncer * create(bool twoRetains = true);
 
-    virtual bool init(bool twoRetains)
-	APPLE_KEXT_DEPRECATED;
-    virtual void reinit()
-	APPLE_KEXT_DEPRECATED;
-    virtual IOReturn wait(bool autoRelease = true)
-	APPLE_KEXT_DEPRECATED;
+    virtual bool init(bool twoRetains);
+    virtual void reinit();
+    virtual IOReturn wait(bool autoRelease = true);
     virtual void signal(IOReturn res = kIOReturnSuccess,
-					bool autoRelease = true)
-	APPLE_KEXT_DEPRECATED;
+						bool autoRelease = true);
 };
 
 #endif /* !_IOSYNCER */
