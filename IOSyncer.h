@@ -41,7 +41,7 @@ private:
     IOSimpleLock *guardLock;
     volatile bool threadMustStop;
     IOReturn fResult;
-    virtual void free();
+    virtual void free() override;
     virtual void privateSignal();
 
 public:
