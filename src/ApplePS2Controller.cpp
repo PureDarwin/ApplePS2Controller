@@ -1350,7 +1350,7 @@ IOReturn ApplePS2Controller::setPowerStateAction( OSObject * target,
                                                   void * arg2, void * arg3 )
 {
   ApplePS2Controller * me = (ApplePS2Controller *) target;
-  UInt32       powerState = (UInt32) arg0;
+  UInt32       powerState = (UInt32) ((UInt64)arg0);
 
   me->setPowerStateGated( powerState );
 
